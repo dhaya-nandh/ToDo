@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<table>
+    <form id="userForm">
+        <h1>Student Form</h1>
+       <tr>
+            <td>Name</td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td> Age</td>
+            <td><input type="number" id="age" name="age"></td>
+        </tr>
+       <tr>
+            <td>Gender</td>
+           <td><input type="radio" id="male" name="gender" value="Male">
+            Male
+            <input type="radio" id="female" name="gender" value="Female">
+            Female</td> 
+        </tr>
+            <td>Address</td>
+           <td> <input type="text" id="address" name="address"></td>
+        <tr>
+            <td>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </td>
+        </tr>
+    </form>
+</table>
+
+    <table id="userTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
